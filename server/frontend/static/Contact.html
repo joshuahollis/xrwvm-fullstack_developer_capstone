@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Contact Us</title>
+    <style>
+        /* Custom CSS for image alignment */
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        .contact-info img {
+            margin-right: 20px; /* Space between the image and the contact info */
+            width: 100px; /* Adjust the width of the contact support image */
+            height: auto;
+        }
+        .dealership-image {
+            width: 100%; /* Full width for the dealership image */
+            height: auto;
+            margin-bottom: 20px; /* Space below the dealership image */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Best Cars Dealership</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Dealership Image -->
+        <img src="{% static 'dealership.jpg' %}" alt="Dealership Image" class="dealership-image">
+
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us using the information below:</p>
+
+        <!-- Contact Info with Support Image -->
+        <div class="contact-info">
+            <img src="{% static 'contact_support.png' %}" alt="Contact Support">
+            <ul>
+                <li><strong>Address:</strong> 123 Best Cars Street, North America</li>
+                <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                <li><strong>Email:</strong> info@bestcars.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

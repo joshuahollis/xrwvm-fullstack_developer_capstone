@@ -74,6 +74,20 @@ img{
   margin-top:3%;
   background-color: black;
 }
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+.contact-info img {
+    margin-right: 20px; /* Space between the image and the contact info */
+    width: 100px; /* Adjust the width of the contact support image */
+    height: auto;
+}
+.dealership-image {
+    width: 100%; /* Full width for the dealership image */
+    height: auto;
+    margin-bottom: 20px; /* Space below the dealership image */
+}
 
 .navitems{
   display: flex;
